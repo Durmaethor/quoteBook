@@ -7,12 +7,12 @@
 </head>
 <body ng-controller="mainCtrl">
     
-    <p ng-repeat = "quote in quotes track by $index">
+    //This is the layout for the quotes
+    <p ng-repeat = "quote in quotes track by $index"> //$index adds and interation to the ng-repeat to help track the collection
         <span class = 'text'>{{quote.text}}</span>
         <span class = 'author'>{{quote.author}}</span>
         <button ng-click = "deleteMe(quote.text)">Delete</button>
     </p>
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
     <script src="js/app.js"></script>
