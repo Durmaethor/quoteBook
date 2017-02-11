@@ -4,7 +4,7 @@ angular.module('quoteBook').controller('mainCtrl', function($scope, dataService)
 
     $scope.deleteMe = function(textToDelete){
         dataService.removeData(textToDelete);
-    }
+    };
 
     $scope.addQuote = function(){
         var newQuote = {
@@ -15,6 +15,6 @@ angular.module('quoteBook').controller('mainCtrl', function($scope, dataService)
             $scope.newQuoteText = '';
             $scope.newQuoteAuthor = '';
         }
-    }
-    
+    };
+
 });
