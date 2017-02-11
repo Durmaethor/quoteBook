@@ -28,6 +28,6 @@ angular.module('quoteBook').service('dataService', function(){
                 quotes.splice(i--, 1);
             }
         }
-    }
+    };
 
 })
