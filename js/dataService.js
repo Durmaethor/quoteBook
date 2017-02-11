@@ -21,6 +21,13 @@ angular.module('quoteBook').service('dataService', function(){
         }
         return false;
     };
-
+    //removes a chosen quote from the array after looping through
+    this.removeData = function(textToRemove){
+        for(i = 0; i < quotes.length; i++){
+            if(quotes[i].text.toLowerCase() === textToRemove.toLowerCase()){
+                quotes.splice(i--, 1);
+            }
+        }
+    }
 
 })
