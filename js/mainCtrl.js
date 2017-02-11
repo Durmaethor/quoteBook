@@ -9,7 +9,7 @@ angular.module('quoteBook').controller('mainCtrl', function($scope, dataService)
     $scope.addQuote = function(){
         var newQuote = {
             text:$scope.newQuoteText,
-            auther:$scope.newQuoteAuthor
+            author:$scope.newQuoteAuthor
         }
         if(dataService.addData(newQuote)){
             $scope.newQuoteText = '';

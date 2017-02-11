@@ -16,7 +16,7 @@ angular.module('quoteBook').service('dataService', function(){
     //adds a new quote to the array as long as it meets both requirements
     this.addData = function(newQuote){
         if(newQuote.text && newQuote.author) { //if both properties are present
-            quotes.push(quotes); //push to the quotes array
+            quotes.push(newQuote); //push to the quotes array
             return true;
         }
         return false;
