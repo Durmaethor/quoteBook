@@ -12,14 +12,15 @@ angular.module('quoteBook').service('dataService', function(){
     //calls the quotes array
     this.getQuotes = function(){
         return quotes;
-    }
+    };
     //adds a new quote to the array as long as it meets both requirements
     this.addData = function(newQuote){
-        if(newQuote.text && newQuote.author) {
-            
+        if(newQuote.text && newQuote.author) { //if both properties are present
+            quotes.push(quotes); //push to the quotes array
+            return true;
         }
-
-    }
+        return false;
+    };
 
 
 })
